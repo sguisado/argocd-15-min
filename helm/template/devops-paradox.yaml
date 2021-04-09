@@ -6,21 +6,21 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: production
   source:
+    path: helm
     repoURL: https://github.com/vfarcic/devops-paradox.git
     targetRevision: HEAD
-    path: helm
     helm:
       values: |
         image:
           tag: latest
         ingress:
-          host: devops-paradox.35.197.195.146.xip.io
+          host: devops-toolkit.35.197.195.146.xip.io
       version: v3
   destination:
-    server: https://kubernetes.default.svc
     namespace: production
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       selfHeal: true
