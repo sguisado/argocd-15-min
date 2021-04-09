@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: production
   source:
-    path: helm
-    repoURL: https://github.com/vfarcic/devops-paradox.git
+    path: helm-guestbook
+    repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
