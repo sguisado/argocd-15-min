@@ -8,11 +8,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/sguisado/devops-toolkit.git
+    repoURL: https://github.com/vfarcic/devops-toolkit.git
     targetRevision: HEAD
     path: helm
     helm:
-      values:
+      values: |
         image:
           tag: latest
         ingress:
