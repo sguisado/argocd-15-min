@@ -16,7 +16,7 @@ spec:
         image:
           tag: latest
         ingress:
-          host: devops-toolkit.$INGRESS_HOST.xip.io
+          host: devops-toolkit.35.197.195.146.xip.io
       version: v3
   destination:
     server: https://kubernetes.default.svc
